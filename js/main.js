@@ -171,3 +171,41 @@ const candy = 'lolly pop';
 
 const sentence = `${person} do you want a ${candy}?`;
 console.log(sentence);
+
+console.log('--------------------------');
+// UZDUOTYS "Kintamuju inicijavimas"
+// Sukurti 3 kintamuosius su skaičiaus tipo reikšmėmis ir po kiekvieno jų inicijavimo, išvesti į console
+
+const silkesKaina = 5;
+const duonosKaina = 2;
+const kavosKaina = 3;
+
+console.log('Silkes kaina:', silkesKaina);
+console.log('Duonos kaina:', duonosKaina);
+console.log('Kavos kaina:', kavosKaina);
+
+// Susumuoti visus skaičiaus tipo kintamuosius ir rezultatą išvesti į console
+
+console.log('Produktu kainu suma:', silkesKaina + duonosKaina + kavosKaina);
+
+//Sukurti 3 kintamuosius su teksto tipo reikšmėmis ir po kiekvieno jų inicijavimo, išvesti į console
+
+const asmensvardas = 'Jonas';
+const asmenspavarde = 'Jonaitis';
+const gyvenamasisMiestas = 'Kaunas'
+
+console.log('Vardas:', asmensvardas);
+console.log('Pavarde:', asmenspavarde);
+console.log('Gyvenamasis miestas:', gyvenamasisMiestas);
+
+// Sujungti visus teksto tipo kintamuosius taip, jog tarp jų būtų sudarytas tarpas ir rezultatą išvesti į console
+
+const duomenys = asmensvardas + ' ' + asmenspavarde + ' ' + gyvenamasisMiestas;
+console.log(duomenys);
+
+
+
+
+
+
+
