@@ -173,6 +173,7 @@ const sentence = `${person} do you want a ${candy}?`;
 console.log(sentence);
 
 console.log('--------------------------');
+
 // UZDUOTYS "Kintamuju inicijavimas"
 // Sukurti 3 kintamuosius su skaičiaus tipo reikšmėmis ir po kiekvieno jų inicijavimo, išvesti į console
 
