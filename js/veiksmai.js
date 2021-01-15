@@ -1,5 +1,5 @@
-// UZDUOTYS "Kintamuju inicijavimas"
-// Sukurti 3 kintamuosius su skaičiaus tipo reikšmėmis ir po kiekvieno jų inicijavimo, išvesti į console
+/* UZDUOTYS "Kintamuju inicijavimas"
+ Sukurti 3 kintamuosius su skaičiaus tipo reikšmėmis ir po kiekvieno jų inicijavimo, išvesti į console*/
 
 const silkesKaina = 5;
 const duonosKaina = 2;
@@ -33,8 +33,8 @@ console.log(duomenys2);
 
 console.log('--------------------------');
 
-// UZDUOTYS "Kintamuju inicijavimas"
-// Sukurti 3 sąrašo tipo kintamuosius su penkiomis skaičių tipo reikšmėmis ir po kiekvieno jų inicijavimo, išvesti į console
+/* UZDUOTYS "Kintamuju inicijavimas" 
+Sukurti 3 sąrašo tipo kintamuosius su penkiomis skaičių tipo reikšmėmis ir po kiekvieno jų inicijavimo, išvesti į console*/
 
 const pirmoPazymiai = [10, 8, 5, 9, 10];
 const antroPazymiai = [10, 10, 8, 7, 9];
@@ -72,3 +72,68 @@ console.log(garsai);
 
 const garsai2 = priebalsiai[4] + ', ' + priebalsiai[3] + ', ' + priebalsiai[2] + ', ' + priebalsiai[1] + ', ' + priebalsiai[0];
 console.log(garsai2);
+
+/* Kintamųjų palyginimas
+Tarpusavyje palyginti skaičiaus tipo kintamuosius:
+kuris didesnis
+kuris mažesnis
+ar jie lygūs
+ar jie nelygūs
+kuris didesnis arba lygus
+kuris mažesnis arba lygus
+*/
+
+const s1 = 3;
+const s2 = 5;
+
+if (s1 === s2) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite dar karta');
+}
+
+/*Išvesti teksto tipo kintamųjų ilgius
+Tarpusavyje palyginti teksto tipo kintamųjų ilgius:
+kuris didesnis
+kuris mažesnis
+ar jie lygūs
+ar jie nelygūs
+kuris didesnis arba lygus
+kuris mažesnis arba lygus
+*/
+
+const vardas = 'Algimantas';
+const pavarde = 'Maitvanagis';
+const vardoIlgis = vardas.length;
+const pavardeIlgis = pavarde.length;
+
+console.log(`${vardoIlgis} ${pavardeIlgis}`);
+console.log(`"${vardas}" ilgis yra ${vardoIlgis}`);
+console.log(`"${pavarde}" ilgis yra ${pavardeIlgis}`);
+
+if (vardoIlgis === pavardeIlgis) {
+    console.log('Pomidoras');
+} else {
+    console.log("Bandykite dar karta");
+}
+
+/* Išvesti sąrašo tipo kintamųjų ilgius
+Tarpusavyje palyginti sąrašo tipo kintamųjų ilgius:
+kuris didesnis
+kuris mažesnis
+ar jie lygūs
+ar jie nelygūs
+kuris didesnis arba lygus
+kuris mažesnis arba lygus
+*/
+
+const pinigine = [3, 5, 7, 6, 5, 9, 5, 6, 7, 10, 90];
+const pirkiniai = ['Duona', 'Sviestas', 'Pienas', 'Obuoliai', 'Grikiai', 'Kiauliena'];
+console.log(pinigine.length);
+console.log(pirkiniai.length);
+
+if (pinigine.length === pirkiniai.length) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite dar karta');
+}
