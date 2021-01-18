@@ -48,11 +48,10 @@ const alkioAtsakymas2 = arAlkanas === true
                             : 'nu tai palaukim';
 console.log(alkioAtsakymas2);
 
-
 // BUS EGZAMINE: !!!!!!! Jeigu true, tada skaicius uz klaustuko, jei false, skaicius uz dvitaskio!!!
-const skaicius = true 
-                    ? true 
-                        ? 4 
-                        : 3 
+const skaicius = true
+                    ? true
+                      ? 4 
+                      : 3 
                     : 2;
 console.log(skaicius);
