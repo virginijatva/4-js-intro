@@ -26,14 +26,49 @@ function multiply(a, b) {
     if (typeof a !== 'number') {
         return 'ERROR: pirmasis paramentras turi buti skaicius'
     }
+    /* Alternatybus uzrasymas
+    if ('' + a === 'NaN') {
+        return 'ERROR: pirmasis paramentras turi buti tikras skaicius'
+    }
+       //a negali buti NaN*/
+    if (a === Infinity) {
+        return 'ERROR: pirmasis parametras negali buti begalybe'
+    }
+    if (a === Infinity || a === -Infinity) {
+        return 'Error: pirmasis parametras negali buti begalybe'
+    }
+    /* Alternatyvus uzrasymas
+    if (Math.abs(a) === Infinity) {
+        return 'Error: pirmasis parametras negali buti begalybe'
+    } */
     if (typeof b !== 'number') {
         return 'ERROR: antrasis parametras turi buti skaicius'
     }
-    return a * b;
+    // b negali buti NaN
+   /* if (isNaN(b)) {
+        return 'ERROR: antrasis paramentras turi buti skaicius'
+    }*/
+    if (!isFinite(b)) {
+        return 'ERROR: antrasis parametras turi buti tikras skaicius'
+    }
+
+    const rez = a * b;
+
+    return rez === 0 ? 0 : rez;
 }
 
 console.log(multiply('labas', 'labas'));
 console.log(multiply('labas', 5));
 console.log(multiply('5', '4'));
+console.log(multiply(8, '5'));
+console.log(multiply(NaN, NaN));
+console.log(multiply(NaN, 5));
+console.log(multiply(8, NaN));
+console.log(multiply(true, false));
+console.log(multiply(true, 4));
 
-console.log(multiply('NaN', 'NaN'));
+console.log(multiply(Infinity, 5));
+console.log(multiply(-Infinity, -Infinity));
+console.log(multiply(8, -Infinity));
+
+console.log(multiply(-1, 0), '->', 0);
