@@ -14,23 +14,23 @@ console.log(multiply(0.4, 3.65), '->', 1.46);
 console.log(multiply(-1, 0), '->', 0);
 
 
-const m1 = multiply(2, 2);
-console.log(m1);
-const m2 = multiply(6, 7);
-console.log(m2);
-const m3 = multiply(-6, 7.5);
-console.log(m3);
+// const m1 = multiply(2, 2);
+// console.log(m1);
+// const m2 = multiply(6, 7);
+// console.log(m2);
+// const m3 = multiply(-6, 7.5);
+// console.log(m3);
 
 
 function multiply(a, b) {
     if (typeof a !== 'number') {
         return 'ERROR: pirmasis paramentras turi buti skaicius'
     }
-    /* Alternatybus uzrasymas
+
     if ('' + a === 'NaN') {
         return 'ERROR: pirmasis paramentras turi buti tikras skaicius'
     }
-       //a negali buti NaN*/
+
     if (a === Infinity) {
         return 'ERROR: pirmasis parametras negali buti begalybe'
     }
@@ -44,7 +44,6 @@ function multiply(a, b) {
     if (typeof b !== 'number') {
         return 'ERROR: antrasis parametras turi buti skaicius'
     }
-    // b negali buti NaN
    /* if (isNaN(b)) {
         return 'ERROR: antrasis paramentras turi buti skaicius'
     }*/
@@ -59,7 +58,8 @@ function multiply(a, b) {
 
 console.log(multiply('labas', 'labas'));
 console.log(multiply('labas', 5));
-console.log(multiply('5', '4'));
+console.log(multiply(5, 'labas'));
+console.log(multiply('4', '5'));
 console.log(multiply(8, '5'));
 console.log(multiply(NaN, NaN));
 console.log(multiply(NaN, 5));

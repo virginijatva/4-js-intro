@@ -22,11 +22,13 @@ Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 7 yra 2 viene
      }
  }
 
- // logic
 
  const ats = `Skaičių intervale tarp ${from} ir ${till}, besidalijančių be liekanos iš ${divider} yra ${count} vienetai.`;
 
  console.log(ats);
+
+
+ 
 
 
  

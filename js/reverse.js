@@ -42,11 +42,22 @@ console.log('Finale gavau', reverseText);
     console.log(i, symbol, reverseText);
 }
   */
+
  /*Ketvirtas
  
- for (let i = -1; i >= 0; i--){
+ for (let i = size - 1; i >= 0; i--){
     const symbol = text[i];
 
     reverseText += symbol;
 
-    console.log(i, symbol, reverseText);*/
+    console.log(i, symbol, reverseText);
+    */
+
+    /* Penktas 
+    for (let i = size; i > 0; i--){
+    const symbol = text[i - 1];
+
+    reverseText += symbol;
+
+    console.log(i, symbol, reverseText);
+    */

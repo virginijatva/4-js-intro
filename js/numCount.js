@@ -10,17 +10,16 @@
 */
 
 
-const from = 0;
-const till = 4;
+const from = 2;
+const till = 7;
 let sum = 0;
 
 for (let i = from; i <= till; i++){
     sum += i;
-
     console.log(i, sum);
 }
 
-const ats = `Suma nuo ${from} iki ${sum}`;
+const ats = `Suma nuo ${from} iki ${till} yra ${sum}`;
 console.log(ats);
 
 
